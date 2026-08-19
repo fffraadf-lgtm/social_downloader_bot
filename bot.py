@@ -4,8 +4,7 @@ import yt_dlp
 import os
 
 
-TOKEN = "8793223432:AAGRhJ6nx226nRDrr6abgBRPZVHdzgIUTuU"
-
+TOKEN = os.getenv("TOKEN")
 
 async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
